@@ -1,0 +1,334 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Chifa Quispe</title>
+<!-- Stylesheets -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link rel="shortcut icon" href="images/LogoChifa.png" type="image/x-icon">
+<link rel="icon" href="images/LogoChifa.png" type="image/x-icon">
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<link href="css/responsive.css" rel="stylesheet">
+<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]--> 
+
+</head>
+<script>
+    // Función para enviar el mensaje de WhatsApp
+    function enviarMensajeWhatsapp() {
+        // Obtener los valores de los campos del formulario
+        var nombre = document.querySelector('input[name="nombre"]').value;
+        var celular = document.querySelector('input[name="celular"]').value;
+        var mensaje = document.querySelector('textarea[name="mensaje"]').value;
+
+        // Crear el mensaje de WhatsApp con la información del formulario
+        var mensajeWhatsapp = "Hola, soy " + nombre + ". Mi número de celular es " + celular + ". Quisiera hacer la siguiente consulta: " + mensaje;
+
+        // Crear el enlace para abrir WhatsApp y enviar el mensaje
+        var enlaceWhatsapp = "https://wa.me/51954828875?text=" + encodeURIComponent(mensajeWhatsapp);
+
+        // Abrir WhatsApp en una nueva pestaña con el mensaje predefinido
+        window.open(enlaceWhatsapp, '_blank');
+    }
+
+    // Asignar la función enviarMensajeWhatsapp al evento clic del botón de consulta
+    document.querySelector('.theme-btn').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevenir el comportamiento predeterminado del botón
+        enviarMensajeWhatsapp(); // Llamar a la función para enviar el mensaje de WhatsApp
+    });
+</script>
+
+<body>
+  <div class="page-wrapper"> 
+  
+       <!-- Menu Principal-->
+       <header class="main-header header-down">
+        <div class="header-top">
+            <div class="auto-container">
+                <div class="inner clearfix">
+                    <div class="top-left clearfix">
+                        <ul class="top-info clearfix">
+                            <li><i class="icon far fa-map-marker-alt"></i>Av. Tupac Amaru Mz.13 Lt.4, Tupac Amaru Inca, Perú</li>
+                            <li><i class="icon far fa-clock"></i> Jue - Mar  :  12:00 pm a 11:00 pm</li>
+                        </ul>
+                    </div>
+                    <div class="top-right clearfix">
+                        <ul class="top-info clearfix">
+                            <li><a href="tel:+51 954828875"><i class="icon far fa-phone"></i>+51 954828875</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header Upper -->
+        <div class="header-upper">        
+            <div class="auto-container">
+                <!-- Main Box -->
+                <div class="main-box clearfix">
+                    <!--Logo-->
+                    <div class="logo-box">
+                         <div class="logo"><a href="index.html" title="Chifa Quispe - Restaurante"><img src="images/LogoChifa.png" width="170px" height="90px" title="Chifa Quispe"></a></div>
+                    </div>
+
+                    <div class="nav-box clearfix">
+                        <!--Nav Outer-->
+                        <div class="nav-outer clearfix">         
+                            <nav class="main-menu">
+                                <ul class="navigation clearfix">
+                                    <li class="current"><a href="index.html">Inicio</a></li>
+                                    <li><a href="restaurante.html">Restaurante</a></li>
+                                    <li><a href="nosotros.html">Nosotros</a></li>
+                                    <li><a href="carta.html">Carta</a></li>                                 
+                                </ul>
+                            </nav>
+                            <!-- Main Menu End-->
+                        </div>
+                        <!--Nav Outer End-->
+
+                        <div class="links-box clearfix">
+                            <div class="link link-btn">
+                                <a href="contacto.html" class="theme-btn btn-style-one clearfix">
+                                    <span class="btn-wrap"> 
+                                        <span class="text-one">Contacto</span>
+                                        <span class="text-two">Contacto</span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="link info-toggler">
+                                <button class="info-btn">
+                                    <span class="hamburger">
+                                        <span class="top-bun"></span>
+                                        <span class="meat"></span>
+                                        <span class="bottom-bun"></span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Hidden Nav Toggler -->
+                        <div class="nav-toggler">
+                            <button class="hidden-bar-opener">
+                                <span class="hamburger">
+                                    <span class="top-bun"></span>
+                                    <span class="meat"></span>
+                                    <span class="bottom-bun"></span>
+                                </span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--End Main Header -->
+    
+    <!--Menu Backdrop-->
+    <div class="menu-backdrop"></div>
+
+    <!-- Menu celular -->
+    <section class="hidden-bar">
+        <!-- Hidden Bar Wrapper -->
+        <div class="inner-box">
+            <div class="cross-icon hidden-bar-closer"><span class="far fa-close"></span></div>
+            <div class="logo-box"><a href="index.html" title="Chifa Quispe - Restaurante"><img src="images/LogoChifa.png" width="170px" height="90px" alt="" title="Chifa Quispe"></a></div>
+            
+            <!-- .Side-menu -->
+            <div class="side-menu">
+                 <ul class="navigation clearfix">
+                    <li class="current"><a href="index.html">Inicio</a></li>
+                    <li><a href="restaurante.html">Restaurante</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="carta.html">Carta</a></li>    
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div><!-- /.Side-menu -->
+            
+            <h2>Visitanos</h2>
+            <ul class="info">
+                <li>Av. Tupac Amaru Mz.13 Lt.4  <br>Tupac Amaru Inca, Perú</li>
+                <li>Jue - Mar  :  12:00 pm a 11:00 pm</li>
+            </ul>
+            <div class="separator"><span></span></div>
+            <div class="booking-info">
+                <div class="bk-title">contacto</div>
+                <div class="bk-no"><a href="tel:+51954828875">+51 954828875</a></div>
+            </div>
+        
+        </div><!-- / Hidden Bar Wrapper -->
+    </section>
+    <!-- / Hidden Bar -->
+
+    <!--Info Back Drop-->
+    <div class="info-back-drop"></div>
+    
+    <!-- Hidden Bar -->
+    <section class="info-bar">
+        <div class="inner-box">
+            <div class="cross-icon"><span class="far fa-close"></span></div>
+            <div class="logo-box"><a href="index.html" title="Chifa Quispe"><img src="images/LogoChifa.png" alt="" title="Chifa Quispe"></a></div>
+            <div class="image-box"><img src="images/resource/sidebar-image.jpg" alt="" title=""></div>
+
+            <h2>Visitanos</h2>
+            <ul class="info">
+                <li>Av. Tupac Amaru Mz.13 Lt.4  <br>Tupac Amaru Inca, Perú</li>
+                <li>Jue - Mar  :  12:00 pm a 11:00 pm</li>
+            </ul>
+            <div class="separator"><span></span></div>
+            <div class="booking-info">
+                <div class="bk-title">Llámanos al</div>
+                <div class="bk-no"><a href="tel:+51954828875">+51 954828875</a></div>
+            </div>
+        </div>
+    </section>
+    <!--End Hidden Bar -->
+
+    <!-- Inner Banner Section -->
+    <section class="inner-banner">
+        <div class="image-layer" style="background-image: url(images/Contactos_A.jpg);"></div>
+        <div class="auto-container">
+            <div class="inner">
+                <div class="subtitle"><span>Chifa Quispe</span></div>
+                <div class="pattern-image"><img src="images/icons/separator.svg" alt="" title=""></div>
+                <h1><span>Contacto</span></h1>
+            </div>
+        </div>
+    </section>
+    <!--End Banner Section -->
+
+    <!--Map Section-->
+    <div class="contact-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242.2553664791734!2d-76.15164488554001!3d-13.713249232414475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x911067e3e5ee2179%3A0x116dfcc3a9bb7441!2sVariedades%20El%20Aripo!5e0!3m2!1ses-419!2spe!4v1713488504830!5m2!1ses-419!2spe" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     </div>
+
+    <!--Contact Info Section-->
+    <section class="contact-page">
+        <div class="left-bg"><img src="images/background/bg-25.png" alt="" title=""></div>
+        <div class="right-bg"><img src="images/background/bg-6.png" alt="" title=""></div>
+        <!--location Section-->
+        <div class="location-center">
+            <div class="auto-container">
+                <div class="cinfo-box">
+                    <div class="row clearfix">
+                        <!--Block-->
+                        <div class="contactinfo-block col-lg-4 col-md-4 col-sm-12">
+                            <div class="inner-box wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="300ms">
+                                <h4>Horario de Atención</h4>
+                                <div class="text">Jue - Mar<br> 12:00 pm - 11:00 pm</div>
+                            </div>
+                        </div>
+
+                        <!--Block-->
+                        <div class="contactinfo-block col-lg-4 col-md-4 col-sm-12">
+                            <div class="inner-box cp-seprator wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="300ms">
+                                <h4>Dirección</h4>
+                                <div class="text">Av. Tupac Amaru Mz.13 Lt.4<br>Tupac Amaru Inca, Perú</div>
+                                
+                            </div>
+                        </div>
+
+                        <!--Block-->
+                        <div class="contactinfo-block col-lg-4 col-md-4 col-sm-12">
+                            <div class="inner-box wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="600ms">
+                                <h4>Numero de Contacto</h4>
+                               <div class="more-link"><a href="#">+51 954828875</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Location form Section-->
+        <div class="auto-container">
+            <div class="c-page-form-box">
+                <div class="row clearfix">
+                <!--form Section-->
+                <div class="loc-block col-lg-6 col-md-12 col-sm-12">
+                    <div class="title-box centered">
+                        <h2>Mensaje</h2>
+                        <div class="text desc">¿Tiene alguna pregunta sobre nuestro servicio? Estamos aquí para ayudarte, contáctenos Ahora</div>
+                    </div>
+                    <div class="default-form reservation-form">
+                        <form method="POST" action="https://formsubmit.co/geniomat30.11@gmail.com">
+                            <div class="clearfix">
+                                <div class="form-group">
+                                    <div class="field-inner">
+                                        <input type="text" name="nombre" value="" placeholder="Nombre" required="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="field-inner">
+                                        <input type="email" name="email" value="" placeholder="Email" required="">
+                                    </div>
+                                </div>
+                                <div class="form-group ">
+                                    <div class="field-inner">
+                                        <input type="text" name="celular" value="" placeholder="Teléfono" required="">
+                                    </div>
+                                </div>
+                            
+                                <div class="form-group ">
+                                    <div class="field-inner">
+                                        <textarea name="mensaje" placeholder="Mensaje" required=""></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <button type="submit" class="theme-btn btn-style-one clearfix">
+                                        <span class="btn-wrap">
+                                            <span class="text-one">Enviar Mensaje</span>
+                                            <span class="text-two">Enviar Mensaje</span>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!--form image Section-->
+                <div class="loc-block col-lg-6 col-md-12 col-sm-12">
+                    <img src="images/Contactos_M.jpg" alt="" width="500px" height="500px">
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    
+
+
+    <!--Main Footer-->
+<footer class="main-footer">
+        <div class="image-layer" style="background-image: url(images/fondo2.jpg);"></div>
+        <div class="footer-bottom">
+            <div class="auto-container">
+                <div class="copyright">&copy; 2024 Chifa Quispe. All Rights Reserved | Creado by <a href="https://chat.whatsapp.com/LbWkpvZpYjd1IldDFgg2lL" target="blank">UPSJB-ICS5</a></div>
+            </div>
+        </div>
+    </footer>
+
+</div>
+<!--End pagewrapper-->
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="icon fa fa-angle-up"></span></div>
+
+<script src="js/jquery.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/swiper.js"></script>
+<script src="js/owl.js"></script>
+<script src="js/appear.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/custom-script.js"></script>
+</body>
+</html>

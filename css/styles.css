@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    font-family: "Platypi", serif;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: -15px;
+    padding: 0;
+}
+
+header {
+    background-color: #333; /* Color de fondo para la barra superior */
+    color: #f1ac29 ; /* Color de texto para la barra superior */
+    padding: 0px; /* Espaciado interno de la barra superior */
+}
+
+.center-container {
+    background-color: rgb(31, 32, 34);
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: normal; 
+}   
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.board {
+    background-color: #cccccca4 ;
+    padding: 10px;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
+    width: 80%;
+    margin: 20px;
+}
+
+.card {
+    width: calc(25% - 10px);
+    height: 100px;
+    margin: 5px;
+    background-color: #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card img {
+    display: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.restart-btn {
+    margin-bottom: 25px;
+    padding: 10px 20px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color:rgb(181, 167, 115); /* Color de fondo del botón */
+    color: #ffffff; /* Color del texto del botón */
+    border: none; /* Quita el borde del botón */
+    border-radius: 5px; /* Agrega bordes redondeados al botón */
+}
+
+.restart-btn:hover {
+    background-color: #f0b536;
+    color: #ffffff; /* Cambia el color de fondo del botón al pasar el ratón por encima */
+}
+
+@media (max-width: 750px) {
+    h1{
+        font-size: 20px;
+    }
+}
+@media (max-width: 450px){
+    .card{
+        height: 90px;
+    }
+}
+@media (max-width:400px){
+    h1{
+        font-size: 15px;
+    }
+    #logo {
+        width: 120px; /* Ajusta el ancho del logo */
+        height: 60px; /* Ajusta la altura del logo */
+    }
+    .card{
+        height: 80px;
+    }
+}
+@media (max-width: 350px){
+    .card{
+        height: 70px;
+    }
+}
+@media (max-width: 300px){
+    .card{
+        height: 60px;
+    }
+}
